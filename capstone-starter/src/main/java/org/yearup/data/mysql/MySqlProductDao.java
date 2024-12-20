@@ -20,7 +20,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
 
     @Override
     public List<Product> search(Integer categoryId, BigDecimal minPrice, BigDecimal maxPrice, String color) {
-        List<Product> products = new ArrayList<>(); // will store the the results
+        List<Product> products = new ArrayList<>(); // will store the results
         StringBuilder sqlBuilder = new StringBuilder("SELECT * FROM products WHERE 1=1");
         List<Object> parameters = new ArrayList<>(); // Will store the query values
 
